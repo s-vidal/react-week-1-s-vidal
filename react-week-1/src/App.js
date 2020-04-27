@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import UserList from "./components/userList";
+import Alert from "./components/alert.jsx";
 
 function App() {
   return (
     <div>
-      <UserList />
+      <Alert />
     </div>
   );
 }
