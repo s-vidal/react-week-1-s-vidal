@@ -1,21 +1,19 @@
 import React, {Component} from "react";
 import "./App.css";
-import Alert from "./components/alert.jsx";
-import CheckBox from "./components/checkBox.jsx";
+import Chat from "./components/chat";
+import MessageBox from "./components/messageBox";
 
 class App extends Component {
-  state = {isChecked: false};
+  constructor() {
+    super();
+    this.state = {};
+  }
 
   render() {
-    const {isChecked} = this.state;
     return (
-      <div className="container">
-        <CheckBox
-          onCheck={(value) => {
-            this.setState({isChecked: !value});
-          }}
-        />
-        {isChecked && <Alert />}
+      <div style={this.border} className="container mt-2">
+        <Chat messages={this.state.messages} />
+        <MessageBox addMessage={(messages) => this.setState({messages})} />
       </div>
     );
   }
