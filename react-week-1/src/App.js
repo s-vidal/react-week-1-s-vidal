@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./components/navBar";
-import Body from "./components/body";
+import UserList from "./components/userList";
 
 function App() {
   return (
-    <div className="d-flex flex-column">
-      <NavBar />
-      <Body />
+    <div>
+      <UserList />
     </div>
   );
 }
