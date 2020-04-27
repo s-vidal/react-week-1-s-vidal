@@ -16,7 +16,7 @@ class Alert extends Component {
   render() {
     const {showAlert} = this.state;
     return (
-      <div className="container">
+      <div>
         <div className="row">
           <div className="col-4"></div>
           <h1 className="col-4">Hello</h1>
